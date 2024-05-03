@@ -1,0 +1,28 @@
+<div class="row" style="margin-left: 400px; margin-top: 100px;">
+    <div class="col-md-6">
+        <div class="card card-primary">
+            <div class="card-header">
+                <h3 class="card-title">Inscription</h3>
+            </div>
+            <div class="modal-body">
+                <form  #l="ngForm" (ngSubmit)="addutilisateur(l.value)">
+                  <div class="card-body">
+                      
+                      <label for="exampleInputEmail1">Email </label>
+                      <input type="email" class="form-control"  placeholder="Email" ngModel name="email">
+                  
+                  
+                      <label for="Adresse">Nom</label>
+                      <input type="Adresse" class="form-control"  placeholder="nom" ngModel name="nom">
+                  
+                      <label for="exampleInputPassword1">Mot Passe</label>
+                      <input type="password" class="form-control"  placeholder="password" ngModel name="password">
+                  
+                 
+              </div>
+              <div class="card-footer">
+                  <button type="submit" class="btn btn-primary btn-block" >Inscrire</button>
+          </div>
+        </form>
+              </div>
+              </div></div></div>

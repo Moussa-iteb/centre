@@ -1,0 +1,129 @@
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3  align="center"><b><i>Bienvenue<sub> Dashboard Centre De Contact</sub></i></b></h3>
+        </div>
+        <div class="card-body">     
+         
+            <li class="nav-item d-none d-sm-inline-block">
+              <a style="cursor: pointer;" class="nav-link" data-toggle="modal" data-target="#modal-default" align="center"><b><i>Pré-traitement ALL CALLS </i></b></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a style="cursor: pointer;" class="nav-link" data-toggle="modal" data-target="#modal-no" align="center"><b><i>Pré-traitement ALL Missed CALLS </i></b></a>
+            </li>
+            
+            <li class="nav-item d-none d-sm-inline-block">
+            
+              <a routerLink="/dashboard/about" class="nav-link" align="center">
+                
+                <p><i><b>Dashboard Liste des Appels</b></i></p>
+                
+              </a>
+            </li>
+           
+              <a style="cursor: pointer;" class="nav-link float-right" (click)="logMeOut()">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAk0lEQVRIie2VMQ6AIAxFX1w9i/dQT+HktTReyl09gysOSuIgoUWJwfiTBob+/kALH76IGpgBo4wZqCQCIcVtTBIBm6zFJS8LKKRCUgK9NFHbg8axf0zAAAOQawhaAQOMQHFXwPcOVqA9E6JP0RVevSJXftQmRx9Ti07K+z87r8ByrFqzgd2svKjYnSnEzUrF4RLBBuHkaG0Rq1GUAAAAAElFTkSuQmCC"/>
+                </a>
+              
+               
+               
+                
+                
+               
+            
+         
+                 
+         
+      
+  </div>
+  
+  
+   
+                    
+                    
+                  
+  </div>
+  
+  <div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Appels Entrants</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form #d="ngForm" (ngSubmit)="addTwo(d.value)">
+        <div class="card-body">
+            
+          <div class="form-group">
+            <label for="exampleInputFile">Choisir une Fichier:</label>
+            <input type="file" name="filename" ngModel class="file-upload" onchange="console.log(event.target.value)">
+                </div>
+                
+            
+           
+          
+            
+          
+            
+            <div class="card-footer">
+                <button type="submit" class="btn btn-block bg-gradient-primary btn-lg">Confirmer</button>
+            </div>
+      
+        </div></form></div></div></div></div>
+                
+                
+              
+       
+    </div></div>         
+                      
+             
+                            
+                            
+                                      
+        <div class="modal fade" id="modal-no">
+          <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Appels Sortant No Answer</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form #f="ngForm" (ngSubmit)="add(f.value)">
+              <div class="card-body">
+                  
+                <div class="form-group">
+                  <label for="exampleInputFile">Choisir une Fichier:</label>
+                  <input type="file" name="filename" ngModel class="file-upload" onchange="console.log(event.target.value)">
+                      </div>
+                      
+                  
+                 
+                
+                  
+                
+                  
+                  <div class="card-footer">
+                      <button type="submit" class="btn btn-block bg-gradient-primary btn-lg">Confirmer</button>
+                  </div>
+            
+              </div></form></div></div></div></div>
+                      
+                                  
+                                
+   
+  
+    
+   
+  
+  
+     
+  
+  <router-outlet></router-outlet>
+   
